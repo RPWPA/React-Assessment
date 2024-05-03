@@ -1,0 +1,75 @@
+.cards-list {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Display 3 cards per row */
+  gap: 20px;
+}
+
+.university-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border: 1px solid #ccc;
+}
+
+.university-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.university-card h2 {
+  margin: 0;
+  color: #333;
+}
+
+.university-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.university-card ul {
+  padding: 0;
+  margin: 0;
+}
+
+.university-card li {
+  list-style-type: none;
+}
+
+.university-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.university-card a:hover {
+  text-decoration: underline;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px; /* Adjust top position */
+  right: 10px; /* Adjust right position */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+  .cards-list {
+    grid-template-columns: repeat(1, 1fr); /* Display 1 card per row on mobile */
+  }
+}
